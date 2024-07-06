@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Transaction History</h1>
+        <div class="summary">
+            <p><span id="net-balance"></span></p>
+            <p><span id="total-in"></span></p>
+            <p><span id="total-out"></span></p>
+            <p><span id="total-due"></span></p>
+        </div>
+        <label for="person-filter">Filter by Person's Name:</label>
+        <select id="person-filter">
+            <option value="all">All</option>
+        </select>
+        <ul id="history-list"></ul>
+        <div class="report-options">
+            <label>
+                <input type="radio" name="report" value="daily"> Daily
+            </label>
+            <label>
+                <input type="radio" name="report" value="weekly"> Weekly
+            </label>
+            <label>
+                <input type="radio" name="report" value="monthly"> Monthly
+            </label>
+        </div>
+        <button id="download-report">Download Report</button>
+    </div>
+    <script src="history.js"></script>
+</body>
+</html>

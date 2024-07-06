@@ -1,0 +1,213 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 700px;
+    border: 2px solid #4db6ac;
+}
+
+h1 {
+    text-align: center;
+    color: #00695c;
+    margin-bottom: 25px;
+    font-size: 26px;
+    border-bottom: 3px solid #b2dfdb;
+    padding-bottom: 10px;
+}
+
+form, .summary {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+input, select, button, .report-options {
+    margin: 12px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #b2dfdb;
+    border-radius: 8px;
+    background-color: #e0f2f1;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.02);
+}
+
+button.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #b2dfdb;
+    border-radius: 8px;
+    flex-direction: row;
+}
+
+.summary p {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #004d40;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f1f8e9;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #c5e1a5;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #dcedc8;
+}
+
+.method {
+    padding: 5px 10px;
+    background-color: #8bc34a;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.amount-in {
+    color: #388e3c;
+    font-weight: bold;
+}
+
+.amount-out {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.report-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.report-options label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #004d40;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#download-report {
+    width: 100%;
+    background-color: #388e3c;
+    margin-top: 20px;
+}
+
+#download-report:hover {
+    background-color: #2e7d32;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#history-list li {
+    background-color: #f1f8e9;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #c5e1a5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+#history-list li:hover {
+    background-color: #dcedc8;
+}
+
+.transaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.transaction .method,
+.transaction .description,
+.transaction .amount,
+.transaction .person,
+.transaction .due-amount {
+    flex: 1;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.transaction .method {
+    text-transform: uppercase;
+    background-color: #8bc34a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.amount-in {
+    color: #388e3c;
+}
+
+.amount-out {
+    color: #d32f2f;
+}
+
+.due-amount {
+    color: #ff9800;
+}
+
+.transaction small {
+    flex: 2;
+    color: #757575;
+    font-size: 12px;
+}
+

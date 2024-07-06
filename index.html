@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Flow Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cash Flow Tracker</h1>
+        <form id="transaction-form">
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="type">
+                <option value="in">Cash In</option>
+                <option value="out">Cash Out</option>
+                <option value="due">Due Payment</option>
+                <option value="repayment">Repayment</option>
+            </select>
+            <input type="text" id="person-name" placeholder="Person's Name" list="people-list">
+            <datalist id="people-list"></datalist>
+            <button type="button" id="add-person" class="disabled">Add Person</button>
+            <select id="method" disabled>
+                <option value="cash">Cash</option>
+                <option value="online">Online</option>
+            </select>
+            <button type="submit">Add Transaction</button>
+        </form>
+        <button id="history-button">View History</button>
+        <button id="delete-button">Delete All</button>
+        <button id="new-cashbook-button">New Cashbook</button>
+        <select id="cashbook-select"></select>
+        <ul id="transaction-list" class="hidden"></ul>
+        <div id="balance"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
